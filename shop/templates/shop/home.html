@@ -1,0 +1,13 @@
+{% extends "default_theme/base.html" %}
+
+{% block content %}
+    </h2>
+        hello 
+        {%if user.first_name%}
+            {{ user.first_name }}
+        {% else %}
+            {{ user.username}}
+        {% endif %}
+        ! Welcom to my shop
+    </h2>
+{% endblock%}
